@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/bootstrap-responsive.css" />
+    <link rel="stylesheet" type="text/css" href="../Css/style.css" />
+    <script type="text/javascript" src="../Js/jquery.js"></script>
+    <script type="text/javascript" src="../Js/jquery.sorted.js"></script>
+    <script type="text/javascript" src="../Js/bootstrap.js"></script>
+    <script type="text/javascript" src="../Js/ckform.js"></script>
+    <script type="text/javascript" src="../Js/common.js"></script>
+
+    <style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
+
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+
+.aaa{
+	padding-top:20px;
+	padding-left:20px;
+	margin:auto
+}
+
+.aaa12vvv{
+    margin-top:30px;
+    padding-top:0px;
+}
+.aaa2vvv{
+    margin-top:10px;
+}
+.btn-primary{
+ padding-top:50px;
+    padding-left:100px;
+}
+.ccdd{
+    padding-left:50px;
+    padding-right:50px
+}
+
+    </style>
+    <script >
+    window.onload = function(){
+      var datas = [{name:"n2",age:22,gender:1},{name:"n2",age:22,gender:1},{name:"n36",age:22,gender:1}];
+      var num = 0;
+      var age;
+      var name;
+      var gender;
+      var table;
+      for(var num =0; num< datas.length;num++){
+         name = datas[num].name;
+         age = datas[num].age;
+         gender = datas[num].gender;
+
+        //获取table
+        table = document.getElementsByTagName("table")[0];
+
+        //追加一行
+        table.innerHTML += "<tr>\n" +
+            "        <td>"+name+"</td>\n" +
+            "        <td>"+age+"</td>\n" +
+            "        <td>"+gender+"</td>\n" +
+            "    </tr>";
+      }
+   };
+
+</script>
+</head>
+<body>
+<form class="form-inline aaa">
+    机构名称：
+    <input type="text" name="rolename" id="rolename1"class="input-default" placeholder="" value="">&nbsp;&nbsp;
+    <button type="1" class="btn btn-primary">查询</button>;
+    <button type="button" class="btn btn-success" id="addnew1">新增机构</button>
+    <button type="button" class="btn btn-success" id="addnew2">新增机构</button>
+    <button type="button" class="btn btn-success" id="addnew3">新增机构</button>
+    <button type="button" class="btn btn-success" id="addnew4">新增机构</button>
+    <button type="button" class="btn btn-success" id="addnew5">新增机构</button>
+</form>
+
+
+<div class="table-responsive ccdd">
+<table class="table table-bordered table-hover ">
+    <tr>
+    <!-- On rows -->
+    <th class="active">x1</th>
+    <th class="success">x2</th>
+    <th class="warning">x3</th>
+    <th class="danger">x4</th>
+    <th class="info">x5</th>
+    </tr>
+    <!-- On cells (`td` or `th`) -->
+    <tr>
+        <td class="active">22</td>
+        <td class="success">33</td>
+        <td class="warning">67</td>
+        <td class="danger">45</td>
+        <td class="info">5</td>
+    </tr>
+</table>
+</div>
+
+
+<div class="aaa12vvv">
+    机构名称：
+</div>
+<div class="aaa2vvv">
+    机构名称：
+</div>
+<br>
+<br>
+<hr style="color:red">
+</body>
+</html>
